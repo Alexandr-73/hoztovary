@@ -1,0 +1,20 @@
+app/
+├── Http/
+│   ├── Controllers/
+│   │   ├── Admin/          # Админ-панель
+│   │   ├── Catalog/
+│   │   ├── Cart/
+│   │   ├── Order/
+│   │   └── User/
+├── Models/
+├── Services/              # Бизнес-логика
+├── Repositories/          # Работа с данными
+└── ViewModels/           # Данные для представлений
+
+resources/
+├── views/
+│   ├── layouts/
+│   ├── catalog/
+│   ├── cart/
+│   ├── admin/
+│   └── components/       # Blade-компоненты
