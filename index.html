@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хозтовары — интернет-магазин под ключ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9edf2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            color: #1e2a3a;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding: 2rem 2rem 3rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #2c3e50, #1e4a6e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        .badge {
+            background: #10b981;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4b5563;
+            margin-bottom: 2rem;
+            border-left: 4px solid #10b981;
+            padding-left: 1rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background: #f8fafc;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .tech-stack {
+            background: #1e293b;
+            color: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .tech-stack span {
+            display: inline-block;
+            background: #334155;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            margin: 0.3rem;
+            font-size: 0.85rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0.5rem 0.5rem 0 0;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: #10b981;
+        }
+        .btn-primary:hover {
+            background: #059669;
+            transform: scale(1.02);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #2c3e50;
+            color: #2c3e50;
+        }
+        .btn-outline:hover {
+            background: #2c3e50;
+            color: white;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.85rem;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 2rem;
+        }
+        @media (max-width: 640px) {
+            .container { padding: 1.5rem; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="badge">⚡ Работающий проект | Полный код на GitHub</div>
+    <h1>Хозтовары</h1>
+    <div class="subtitle">Интернет-магазин хозяйственных товаров «под ключ» — от идеи до запуска с интеграциями</div>
+
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🛒</div>
+            <h3>Полный функционал</h3>
+            <p>Каталог, корзина, личный кабинет, админ-панель, онлайн-оплата, расчёт доставки.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔌</div>
+            <h3>Интеграции</h3>
+            <p>Evotor (онлайн-кассы), Komtet (логистика), подготовка чеков, синхронизация товаров.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>Современный стек</h3>
+            <p>Laravel 11, MySQL, Tailwind CSS, Livewire (или Blade), готов к масштабированию.</p>
+        </div>
+    </div>
+
+    <div class="tech-stack">
+        <strong>⚙️ Технологии проекта:</strong><br><br>
+        <span>PHP 8.2</span> <span>Laravel 11</span> <span>MySQL</span> <span>Blade</span>
+        <span>Tailwind CSS</span> <span>jQuery</span> <span>Git</span> <span>Evotor API</span> <span>Komtet API</span>
+    </div>
+
+    <div style="text-align: center; margin: 1.5rem 0;">
+        <a href="https://github.com/Alexandr-73/hoztovary" class="btn btn-primary" target="_blank">📂 Исходный код на GitHub</a>
+        <a href="https://github.com/Alexandr-73/developer-site" class="btn btn-outline" target="_blank">💻 Второй проект →</a>
+    </div>
+
+    <div style="background: #f1f5f9; border-radius: 1rem; padding: 1.5rem; margin: 1.5rem 0;">
+        <h3 style="margin-bottom: 0.5rem;">🎯 Для заказчиков</h3>
+        <p>Этот магазин — реальный рабочий пример. Я разрабатываю сайты и веб-системы под ключ:</p>
+        <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+            <li>✅ Интернет-магазины любой сложности</li>
+            <li>✅ Интеграция с 1С, кассами, маркетплейсами</li>
+            <li>✅ Адаптивный дизайн, админ-панель</li>
+            <li>✅ Исходный код передаётся заказчику (никаких «закрытых» систем)</li>
+        </ul>
+        <p style="margin-top: 1rem;">📩 <strong>Связаться:</strong> напишите в Telegram / WhatsApp — номер в личном сообщении на Авито.</p>
+    </div>
+
+    <footer>
+        <p>© 2025 — Интернет-магазин «Хозтовары» | Демонстрационный проект для портфолио</p>
+        <p>⭐ Весь код доступен в репозитории — можно использовать как основу для своих проектов.</p>
+    </footer>
+</div>
+</body>
+</html>
