@@ -3,7 +3,7 @@
         <div class="row align-items-center py-2">
             <div class="col-lg-3 col-md-4 col-6">
                 <a href="{{ route('home') }}" class="d-flex align-items-center text-decoration-none">
-                    <img src="/images/logo_1000.png" alt="Хозтовары" height="50">
+                    <img src="/images/avater_Shkirkin.jpg" alt="Хозтовары" height="50">
                     <span class="fs-4 fw-bold ms-2 text-dark">Хозтовары</span>
                 </a>
             </div>
